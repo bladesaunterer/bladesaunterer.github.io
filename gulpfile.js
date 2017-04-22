@@ -33,7 +33,8 @@ gulp.task('browser-sync', ['jekyll-build'], function() {
 	browserSync({
 		server: {
 			baseDir: '_site'
-		}
+		},
+		open: false
 	});
 });
 
